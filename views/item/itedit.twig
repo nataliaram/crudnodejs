@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit User</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3><a href="/items">User List</a></h3>
+            <h1>Edit User</h1>
+            <form action="/items/update/{{ item._id }}" method="post">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" name="name" value="{{ item.name }}" /></td>
+                        </tr>
+                        <tr>
+                            <td>total</td>
+                            <td><input type="text" name="total" value="{{ item.total }}" /></td>
+                        </tr>
+                        <tr>
+                            <td>imagen</td>
+                            <td><input type="text" name="imagen" value="{{ item.imagen }}" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="submit">Update</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

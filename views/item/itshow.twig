@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Detail</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3><a href="/items">Item List</a></h3>
+            <h1>User Detail</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td>{{ item.name }}</td>
+                    </tr>
+                    <tr>
+                        <td>total</td>
+                        <td>{{ item.total }}</td>
+                    </tr>
+                    <tr>
+                        <td>imagen</td>
+                        <td>{{ item.imagen }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3><a href="/items/edit/{{ item._id }}">EDIT</a></h3>
+            <form action="/items/delete/{{ item._id }}" method="post">
+                <button type="submit">DELETE</button>
+            </form>
+        </div>
+    </body>
+</html>

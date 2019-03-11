@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Item</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3><a href="/items">Item List</a></h3>
+            <h1>Create New User</h1>
+            <form action="/items/save" method="post">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" name="name" /></td>
+                        </tr>
+                        <tr>
+                            <td>total</td>
+                            <td><input type="integer" name="total" /></td>
+                        </tr>
+                        <tr>
+                            <td>imagen</td>
+                            <td><input type="text" name="imagen" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" value="Save" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create User</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3><a href="/users">User List</a></h3>
+            <h1>Create New User</h1>
+            <form action="/users/save" method="post">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" name="name" /></td>
+                        </tr>
+                        <tr>
+                            <td>Age</td>
+                            <td><input type="integer" name="age" /></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="text" name="email" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" value="Save" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

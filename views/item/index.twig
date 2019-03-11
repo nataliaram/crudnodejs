@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Item List</title>
+    </head>
+    <body>
+        <div class="container">
+        <h3><a href="/items/create">Create Item</a></h3>
+        <h1>Item List</h1>
+            {% if users is not empty %}
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>total</th>
+                            <th>imagen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for user in users %}
+                        <tr>
+                            <td><a href="/items/show/{{ item._id }}">{{ item.name }}</a></td>
+                            <td>{{ item.total }}</td>
+                            <td>{{ item.imagen }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <div>No Items found.</div>
+            {% endif %}
+        </div>
+    </body>
+</html>
